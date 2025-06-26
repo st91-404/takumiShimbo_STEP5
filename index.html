@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>STEP5_test</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h2>設問1</h2>
+<textarea id="sampleTextarea"></textarea>
+<input type="button" value="表示" id="displayButton" />
+<div class="">
+    <p id="displayText"></p>
+</div>
+<script src="./src/event1.js"></script>
+
+
+<h2 class="myColor">設問2</h2>
+<button id="changeButton">背景色を変更</button>
+<script src="./src/event2.js"></script>
+
+<h2>設問3</h2>
+<div class="switch_outer">
+    <div class="toggle_switch"></div>
+</div>
+<script src="./src/event3.js"></script>
+
+<h2>設問4,5</h2>
+<form id="dataForm">
+    内容: <textarea id="textContent"  required></textarea>
+    <button type="submit" id="addTextButton">追加</button>
+</form>
+    
+<h3>テーブル</h3>
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>内容</th>
+            <th>操作</th> <!-- 削除ボタン用 -->
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 行がここに追加される -->
+    </tbody>
+</table>
+<script src="./src/event4.js"></script>
+
+<h2>設問6</h2>
+<h3>テストデータ</h3>
+<form id="commentForm">
+    コメント: <textarea id="comment"  required></textarea>
+    <button type="submit" id="addCommentButton">追加</button>
+</form>
+<table id="commentTable">
+    <thead>
+        <tr>
+            <th>コメント</th>
+            <th>操作</th> <!-- 削除ボタン用 -->
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 行がここに追加される -->
+    </tbody>
+</table>
+<script src="./src/event5.js"></script>
+
+
+<h2>設問7</h2>
+<p id="displayCount">1</p>
+<button id="countBtn">カウント</button>
+
+<script src="./src/event6.js"></script>
+
+</body>
+</html>
